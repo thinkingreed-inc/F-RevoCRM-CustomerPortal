@@ -1,15 +1,16 @@
-#Vtiger CRM Customer Portal
+# F-RevoCRM Customer Portal
 
-##Pre-requisites
+## 事前要件
 
-* Enable php cURL extension.
-* Write permission for webserver (Apache) process owner  on writeable folder.
-* Vtiger CRM 7.1.0 with CustomerPortal module enabled.
+* PHP cURL extensionを有効にしてください
+* Webserver (Apache等)に設置先ディレクトリの書き込み権限を与えてください 
+* F-RevoCRM v7.3.0 以上で、CustomerPortalモジュールを有効にしてください
 
-##Installation
+## インストール方法
 
-* Copy config.sample.php to config.php
-* Update config.php variales
-    * crm.url — Vtiger CRM URL fully qualified.
-    * portal.url — URL of this application.
-* Make sure crm.url is reachable from this server.
+* `config.sample.php`を`config.php`にコピー、リネームしてください
+* `config.php`の変数を更新してください
+    * `crm.url` — F-RevoCRMのURLをプロトコル込みのフルで入れてください
+    * `portal.url` — カスタマーポータルのURLを入力してください
+* `crm.url`は設置サーバーからアクセス可能な場所としてください
+
