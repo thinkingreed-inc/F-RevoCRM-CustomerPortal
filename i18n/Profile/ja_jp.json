@@ -1,0 +1,15 @@
+{
+  "Name":"名前",
+  "Primary Email":"メールアドレス",
+  "Secondary Email":"メールアドレス(予備)",
+  "Mobile Phone":"携帯電話番号",
+  "Office Phone":"勤務先電話番号",
+  "_start for CompanyInfo":"keys",
+  "Website":"Webサイト",
+  "Email":"メールアドレス",
+  "Phone":"電話番号",
+  "Personal Details":"登録情報",
+  "Company Details":"会社情報",
+  "Primary Phone":"電話暗号",
+  "Primary Email":"メールアドレス"
+}

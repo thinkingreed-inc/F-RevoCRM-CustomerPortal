@@ -1,0 +1,13 @@
+{
+    "Name": "Isim",
+    "Primary Email": "Birincil e-posta",
+    "Secondary Email": "İkincil e-posta",
+    "Mobile Phone": "Cep Telefonu",
+    "Office Phone": "İş Telefonu",
+    "_start for CompanyInfo": "tuşları",
+    "Website": "Web sitesi",
+    "Email": "E-posta",
+    "Phone": "Telefon",
+    "Personal Details":"Kişisel Bilgileri",
+    "Company Details":"Şirket bilgileri"
+}

@@ -1,0 +1,13 @@
+{
+    "Name": "Nom",
+    "Primary Email": "Courriel primaire",
+    "Secondary Email": "Email secondaire",
+    "Mobile Phone": "Téléphone Mobile",
+    "Office Phone": "Téléphone au bureau",
+    "_start for CompanyInfo": "clés",
+    "Website": "Site Web",
+    "Email": "Email",
+    "Phone": "Téléphone",
+    "Personal Details":"Détails personnels",
+    "Company Details":"Détails de la société"
+}

@@ -1,0 +1,19 @@
+Bootstrap v3.1.1
+
+Edited at 58100
+
+
+/*
+.listViewEntriesTable{
+	width: 93%;
+}
+.listViewEntriesTable td:last-child, .listViewEntriesTable th:last-child,
+.listViewEntriesTable td:last-child, .listViewEntriesTable th:last-child:hover{
+	position: absolute;
+	right: 20px;
+	top: auto;
+	width: 64px;
+	border-right: 1px solid #ddd;
+	height: 30px;
+	padding-bottom: 0;
+}*/
