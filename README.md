@@ -1,13 +1,14 @@
 # F-RevoCRM Customer Portal
-F-RevoCRMの顧客担当者に向けて、専用Webサイトを構築するツールです。  
+構築済みのF-RevoCRMに、登録されている顧客担当者向けの専用Webサイトを構築するツールです。  
 専用Webサイトでは以下のようなことができます。
 - 専用サイトからのお問い合わせ → 「サポート依頼」で管理
 - 請求書やドキュメントの配布 → F-RevoCRMで登録したデータが閲覧可能
 
 ## 事前要件
-* PHP cURL extensionを有効にしてください
-* Webserver (Apache等)に設置先ディレクトリの書き込み権限を与えてください 
-* F-RevoCRM v7.3.0 以上で、CustomerPortalモジュールを有効にしてください
+- F-RevoCRM v7.3.0が利用可能な状態である必要があります
+- PHP cURL extensionを有効にしてください
+- Webserver (Apache等)に設置先ディレクトリの書き込み権限を与えてください 
+- F-RevoCRMではCustomerPortalモジュールを有効にしてください
 
 ## インストール方法
 - `config.sample.php`を`config.php`にコピー、リネームしてください
