@@ -16,7 +16,7 @@
       </span>
     </detail-navigator>
       {{record[header]}}
-    <button ng-if="(closeButtonDisabled && HelpDeskIsStatusEditable && isEditable)" translate="Mark as closed" class="btn btn-success close-ticket" ng-click="close();"></button>
+    <button ng-if="(closeButtonDisabled && isEditable)" translate="Mark as closed" class="btn btn-success close-ticket" ng-click="close();"></button>
     <button ng-if="closeButtonDisabled && documentsEnabled" translate="Attach document to this ticket" class="btn btn-primary attach-files-ticket" ng-click="attachDocument('Documents','LBL_ADD_DOCUMENT')"></button>
     <button translate="Edit Ticket" class="btn btn-primary attach-files-ticket" ng-if="isEditable" ng-click="edit(module,id)"></button>
   </h3>
