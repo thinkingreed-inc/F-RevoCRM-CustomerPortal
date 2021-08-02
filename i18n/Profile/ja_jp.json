@@ -11,5 +11,7 @@
   "Personal Details":"登録情報",
   "Company Details":"会社情報",
   "Primary Phone":"電話暗号",
-  "Primary Email":"メールアドレス"
+  "Primary Email":"メールアドレス",
+  "Last Name" : "姓",
+  "First Name" : "名"
 }
