@@ -569,7 +569,6 @@ function HelpDesk_EditView_Component($scope, $modalInstance, record, api, webapp
 							if (field.type.name == 'date' && field.editable) {
 								if (!isNaN(field.default)) {
 									var date = new Date();
-									$scope.data[ field.name ] = $filter('date')(date, "yyyy-MM-dd");
 									$scope.minDate = $filter('date')(date, "yyyy-MM-dd");
 								} else {
 									$scope.data[ field.name ] = $filter('date')(field.default, "yyyy-MM-dd");
@@ -898,7 +897,6 @@ function HelpDesk_EditView_Component($scope, $modalInstance, record, api, webapp
 							if (field.type.name == 'date') {
 								if (record[ field.label ] === '' && !isNaN(field.default)) {
 									var date = new Date();
-									$scope.data[ field.name ] = $filter('date')(date, "yyyy-MM-dd");
 									$scope.minDate = $filter('date')(record[ field.label ], "yyyy-MM-dd");
 								} else if (record[ field.label ] === '' && isNaN(field.default)) {
 									$scope.data[ field.name ] = $filter('date')(field.default, "yyyy-MM-dd");
