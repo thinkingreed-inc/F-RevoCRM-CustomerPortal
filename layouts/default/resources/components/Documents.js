@@ -24,7 +24,7 @@ function Documents_IndexView_Component($scope, $api, $webapp, $modal, $translate
 
 	angular.extend(this, new Portal_IndexView_Component($scope, $api, $webapp));
 	$scope.searchQ = {
-		onlymine: true
+		onlymine: false
 	}
 
 	$scope.$on('editRecordModalDocuments.Template', function () {
@@ -51,7 +51,7 @@ function Documents_IndexView_Component($scope, $api, $webapp, $modal, $translate
 	});
 
 	$scope.searchQ = {
-		onlymine: true
+		onlymine: false
 	}
 	$scope.isCreateable = true;
 	$scope.viewLoading = true;

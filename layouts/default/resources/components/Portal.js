@@ -13,7 +13,7 @@ function Portal_IndexView_Component($scope, $api, $webapp, sharedModalService, $
 	$scope.pageInitialized = false;
 
 	$scope.searchQ = {
-		onlymine: true
+		onlymine: false
 	}
 	$scope.pageNo = 0;
 	$scope.headers = null;
