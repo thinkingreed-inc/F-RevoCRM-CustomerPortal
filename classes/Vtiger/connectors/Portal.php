@@ -261,6 +261,26 @@ class Vtiger_Portal_Connector extends Vtiger_PortalBase_Connector {
 	public function changePassword($record) {
 		$username = Portal_Session::get('username');
 		$this->auth = array('Authorization' => 'Basic '.base64_encode($username.':'.$password));
+		if(strlen($record['newPassword'])<=8){		
+			$error_keyisweak = array(
+				"code" => '1414',
+				"message" => "Password is not long enough. Please increase the length to at least 8 characters.",
+			);	
+			return $error_keyisweak;
+		}else if(!(preg_match('/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\-+=^$*.\[\]{}()?\"!@#%&\/\\\\,><\':;|_~`\-+=])(?!.*[^a-zA-Z\d\-+=^$*.\[\]{}()?\"!@#%&\/\\\\,><\':;|_~`]).+$/', $record['newPassword']))){
+			$error_keyisweak = array(
+				"code" => '1414',
+				"message" => "The password is not strong enough. Please use at least one lowercase alphabet, one uppercase alphabet, one number and one symbol.",
+			);
+			return $error_keyisweak;
+		}
+		if($record['oldPassword'] == $record['newPassword']){
+			$error_keyisweak = array(
+				"code" => '1414',
+				"message" => "The same password as the previous one cannot be used.",
+			);
+			return $error_keyisweak;
+		}
 
 		$params = array(
 			'_operation' => 'ChangePassword',
