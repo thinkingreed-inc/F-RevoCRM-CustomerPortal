@@ -12,8 +12,8 @@
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="padding-top: 50px;">
+                <div class="col-lg-3 col-md-3 col-sm-0 col-xs-0">&nbsp;</div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding-top: 50px;">
                     <div class="login-form">
                         <form class="form-horizontal" novalidate="novalidate" ng-submit="makeAutoComplete();login(loginForm.$valid)" name="loginForm">
                             <h4 style="text-align:center;"translate="Please provide your portal credentials">Please provide your portal credentials</h4>
@@ -78,7 +78,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
+                <div class="col-lg-3 col-md-3 col-sm-0 col-xs-0">&nbsp;</div>
             </div>
         </div>
     </div>
