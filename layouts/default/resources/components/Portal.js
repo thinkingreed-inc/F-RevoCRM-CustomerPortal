@@ -340,6 +340,9 @@ function Portal_DetailView_Component($scope, $api, $webapp, $translatePartialLoa
 			if ($scope.documentsEnabled) {
 				$scope.loadDocuments();
 			}
+			$api.get($scope.module+'/DescribeModule').success(function (describe) {
+				$scope.fields = describe.describe.fields;
+			});
 		});
 	}
 
