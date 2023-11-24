@@ -23,13 +23,17 @@ class Portal_FetchRelatedRecords_API extends Portal_Default_API {
 		}
 		$result = Vtiger_Connector::getInstance()->fetchRelatedRecords($request->get('relatedModule'), $request->get('relatedModuleLabel'), $request->get('id'), $request->get('parentId'), $pageNo, $pageLimit, $module);
 		$response = new Portal_Response();
-		$response->setResult($this->processResponse($result, $request->get('relatedModule'), $language));
+		$response->setResult($this->processRelatedRecordsResponse($result, $request->get('relatedModule'), $language));
 
 		return $response;
 	}
 
-	public function processResponse($result, $relatedModule, $language) {
+	public function processRelatedRecordsResponse($result, $relatedModule, $language) {
 		$response = array();
+		if (!$result) {
+			$result = array();
+		}
+
 		if ($relatedModule == 'ModComments') {
 			$response['comments'] = $result;
 			$response['more'] = $result['more'];

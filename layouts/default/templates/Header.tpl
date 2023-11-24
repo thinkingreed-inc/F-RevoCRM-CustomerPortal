@@ -7,7 +7,7 @@
 * All Rights Reserved.
 ************************************************************************************}
 
-<!DOCTYPE html>
+<!doctype>
 <html ng-app="portalapp">
 
 	<head>
@@ -16,12 +16,12 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-		<link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.min.css" type="text/css" media="screen">
-		<link rel="stylesheet" href="libraries/jqueryaddons/selectric/selectric.css" type="text/css" media="screen">
-		<link rel="stylesheet" href="libraries/angularjsaddons/ngProgress/ngProgress.css" type="text/css" media="screen">
-		<link rel="stylesheet" href="libraries/angularuiaddons/ui-select-master/src/select.css" type="text/css" media="screen">
-		<link rel="stylesheet" href="layouts/{portal_layout()}/resources/application.css" type="text/css" media="screen">
-		<link rel="stylesheet" href="layouts/{portal_layout()}/skins/default/styles.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.min.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="libraries/jqueryaddons/selectric/selectric.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="libraries/angularjsaddons/ngProgress/ngProgress.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="libraries/angularuiaddons/ui-select-master/src/select.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="layouts/{portal_layout()}/resources/application.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="layouts/{portal_layout()}/skins/default/styles.css" type="text/css" media="screen" />
 		<link rel="stylesheet" href="libraries/angularjsaddons/angular-xeditable/css/xeditable.css">
 		<script type="text/javascript" src="libraries/jquery/jquery.min.js"></script>
 		<script type="text/javascript" src="libraries/bootstrap/js/bootstrap.min.js"></script>

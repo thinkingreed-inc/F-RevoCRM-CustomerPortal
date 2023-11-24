@@ -20,8 +20,8 @@ class Portal_Default_API {
 		return $response;
 	}
 
-	public function processResponse($module, $language) {
-		if (!isset($language)) {
+	public function processResponse($module, $language=null) {
+		if (empty($language)) {
 			$language = Portal_Session::get('langauge');
 		}
 		$moduleMeta = array();

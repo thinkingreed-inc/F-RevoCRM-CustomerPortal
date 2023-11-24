@@ -32,11 +32,11 @@ class Faq_FetchRecords_API extends Portal_Default_API {
 		$result = Vtiger_Connector::getInstance()->fetchRecords($module, $request->get('label'), $request->get('q', array()), $params['fields'], $pageNo, $pageLimit);
 
 		$response = new Portal_Response();
-		$response->setResult($this->processResponse($result, $module, $language));
+		$response->setResult($this->processRecordsResponse($result, $module, $language));
 		return $response;
 	}
 
-	public function processResponse($result, $module, $language) {
+	public function processRecordsResponse($result, $module, $language) {
 		$headers = $result['headers'];
 		$records = $result['records'];
 		$edits = $result['edit'];

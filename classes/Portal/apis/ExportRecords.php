@@ -21,7 +21,7 @@ class Portal_ExportRecords_API extends Portal_FetchRecords_API {
 		$result = Vtiger_Connector::getInstance()->exportRecords($module, $request->get('label'), $request->get('q', array()), $params['fields']);
 		$parsedResult = $this->parseListViewRecords($result, $module);
 		$response = new Portal_Response();
-		$response->setResult($this->processResponse($parsedResult, $module, $language, true));
+		$response->setResult($this->processRecordsResponse($parsedResult, $module, $language, true));
 		return $response;
 	}
 

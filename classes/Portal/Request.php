@@ -14,7 +14,7 @@ class Portal_Request {
 
 	protected function __construct($values = array(), $stripifgpc = true) {
 		$this->data = $values;
-		if ($stripifgpc && !empty($this->data) && get_magic_quotes_gpc()) {
+		if ($stripifgpc && !empty($this->data)) {
 			$this->data = $this->stripslashes_recursive($this->data);
 		}
 	}

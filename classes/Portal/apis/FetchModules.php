@@ -17,7 +17,7 @@ class Portal_FetchModules_API extends Portal_Default_API {
 		return $response;
 	}
 
-	public function processResponse($result) {
+	public function processResponse($result, $language=null) {
 		$response = array();
 		$info = $result['modules']['information'];
 		$nonvisibleMenuModules = array('Contacts', 'Accounts');

@@ -27,12 +27,12 @@ class Portal_FetchHistory_API extends Portal_Default_API {
 		}
 		$result = Vtiger_Connector::getInstance()->fetchHistory($module, $request->get('id'), $pageNo, $pageLimit, $parent);
 		$response = new Portal_Response();
-		$response->setResult($this->processResponse($result, $module, $language));
+		$response->setResult($this->processHistoryResponse($result, $module, $language));
 
 		return $response;
 	}
 
-	public function processResponse($result, $module, $language) {
+	public function processHistoryResponse($result, $module, $language) {
 		$recordMeta = parent::processResponse($module, $language);
 		if (!empty($result['history'])) {
 			$history = array();

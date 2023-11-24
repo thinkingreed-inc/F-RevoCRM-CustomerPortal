@@ -28,11 +28,11 @@ class Portal_FetchRecords_API extends Portal_Default_API {
 		$orderBy = $params['orderBy'];
 		$result = Vtiger_Connector::getInstance()->fetchRecords($module, $request->get('label'), $request->get('q', array()), $params['fields'], $pageNo, $pageLimit);
 		$response = new Portal_Response();
-		$response->setResult($this->processResponse($result, $module, $language));
+		$response->setResult($this->processRecordsResponse($result, $module, $language));
 		return $response;
 	}
 
-	public function processResponse($result, $module, $language, $isExport = false) {
+	public function processRecordsResponse($result, $module, $language, $isExport = false) {
 		if ($result['records'] === null) {
 			return $result;
 		}
