@@ -10,7 +10,7 @@
 
 class Portal_Index_View extends Portal_Default_View {
 
-	public function templateFile() {
+	public function templateFile(Portal_Request $request) {
 		return "Portal/Home.tpl";
 	}
 

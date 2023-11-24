@@ -14,11 +14,11 @@ class Portal_FetchRelatedModules_API extends Portal_Default_API {
 		$module = $request->getModule();
 		$result = Vtiger_Connector::getInstance()->fetchRelatedModules($module);
 		$response = new Portal_Response();
-		$response->setResult($this->processResponse($result));
+		$response->setResult($this->processModuleResponse($result));
 		return $response;
 	}
 
-	public function processResponse($result) {
+	public function processModuleResponse($result) {
 		$activeModules = array();
 		foreach ($result as $module => $values) {
 			$activeModules[] = array('name' => $values, 'value' => 1);

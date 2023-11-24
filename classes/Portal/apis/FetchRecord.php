@@ -22,11 +22,11 @@ class Portal_FetchRecord_API extends Portal_Default_API {
 		}
 
 		$response = new Portal_Response();
-		$response->setResult($this->processResponse($result, $module, $language));
+		$response->setResult($this->processRecordResponse($result, $module, $language));
 		return $response;
 	}
 
-	public function processResponse($result, $module, $language) {
+	public function processRecordResponse($result, $module, $language) {
 		$moduleMeta = array();
 		$recordMeta = parent::processResponse($module, $language);
 		$editFieldNames = array();
