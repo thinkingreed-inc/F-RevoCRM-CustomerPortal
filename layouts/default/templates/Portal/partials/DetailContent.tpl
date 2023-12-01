@@ -17,7 +17,8 @@
                     </div>
                     <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                         <!-- <span class="label label-default">{{value}}</span> -->
-                        <span style="white-space: pre-line;" class="value detail-break" ng:bind-html="record[field.label]"></span>
+                        <span ng-if="record[field.label].slice(0,8) == 'https://'" style="white-space: pre-line;" class="value detail-break"><a href="{{record[field.label]}}" target='_blank'>{{record[field.label]}}</a></span>
+                        <span  ng-if="record[field.label].slice(0,8) != 'https://'" style="white-space: pre-line;" class="value detail-break" ng:bind-html="record[field.label]"></span>
                     </div>
                 </div>
                 <div class="row detailRow" ng-if="module == 'Documents'">
