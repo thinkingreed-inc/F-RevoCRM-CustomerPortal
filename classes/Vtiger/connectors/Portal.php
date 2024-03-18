@@ -22,6 +22,7 @@ abstract class Vtiger_PortalBase_Connector extends Vtiger_Connector {
 	protected function api($params) {
 		if ($this->client) {
 			$this->client->setHeaders($this->auth);
+			$this->client->setHeaders(array('X-PORTAL-REMOTE-ADDR' => $_SERVER['REMOTE_ADDR']));
 			$response = $this->client->doPost($params);
 			$responseText = json_decode($response, true);
 			if ($responseText['success'] && $responseText['result']) {
